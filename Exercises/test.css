@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(212, 207, 207);
+    height: 100vh;
+    max-width:100vw;
+}
+.pic{
+width: 3%;
+height: auto;
+margin-left: 3rem;
+border:1px solid rgb(0, 0, 0);
+box-shadow: 3px 4px 5px rgb(126, 38, 38);
+border-radius: 30%;
+}
+.header-section{
+height: 100px;
+background-color: #292424;
+display: flex;
+justify-content:space-between;
+padding: 1rem;
+}
+.links{
+    gap: 2rem;
+    display: flex;
+}
+.links li{
+    list-style:none;
+    }
+li a{
+    text-decoration: none;
+    color: white;
+}
+.sss{
+    color: white;
+    background-color: rgb(248, 51, 84);
+    border: 1px solid rgb(248, 51, 84); ;
+    border-radius:12px;
+    height:2rem;
+    width: 8rem;
+  transition: background-color 250ms ease-in-out 0s;
+}
+.sss:hover{
+    background-color: rgb(126, 38, 38);
+}
+.hero{
+    width: auto;
+    height: 30vh;
+    background-image: url(images/kivu.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+h1{
+font-size: 2.9rem;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: white;
+text-shadow: 2px 3px 3px black;
+}
+.price-table{
+    padding: 2rem;
+    gap: 2rem;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.table1{
+    padding: 2rem;
+    border-radius: 12px;
+    height:40rem;
+    width: auto;
+    background-color:rgb(184, 181, 181);
+    display: flex;
+    line-height: 2.5rem;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.table2{
+    padding: 2rem;
+    border-radius: 12px;
+    height:40rem;
+    width: auto;
+    background-color:pink;
+    display: flex;
+    line-height: 2.5rem;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.table3{
+    padding: 2rem;
+    border-radius: 12px;
+    height:40rem;
+    width: auto;
+    background-color:rgb(228, 211, 186);
+    display: flex;
+    line-height: 2.5rem;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.button{
+    background-color: rgb(228, 73, 99);
+    color: rgba(255, 255, 255, 0.575);
+    border: 1px solid rgb(228, 73, 99);
+    border-radius: 6px;
+    text-align: center;
+    width: 8rem;
+    height: 1.4rem;
+}
+.button:hover{
+    background-color: rgb(126, 38, 38);
+    color: whitesmoke;
+    border: 1px solid rgb(126, 38, 38);
+}
+ul{
+    list-style-type:circle;
+    fill: blueviolet;
+}
+p{
+    font-weight: bold
+}
+.price{
+    font-size: 2rem;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+h2{
+    font-size: 3rem;
+}
+@media (min-width:600px){
+    .price-table{
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+    .table1,.table2,.table3{
+        flex: 1 1 18rem;
+    }
+}
+@media (min-width:980px){
+    .price-table{
+        flex-wrap: wrap;
+        
+    }
+    .table1,.table2,.table3{
+        flex: 1 1 18rem;
+    }
+}
+
